@@ -1,7 +1,10 @@
 import { useState } from 'react'
 import './App.css'
 import UsersTables from './components/UsersTables';
-
+import SansUseMemo from './components/SansUseMemo';
+import AvecUseMemo from './components/AvecUseMemo';
+import WithCallbackExample from './components/WithCallbackExample';
+import WithoutCallbackExample from './components/WithoutCallbackExample';
 function App() {
   const [count, setCount] = useState(0);
   const [dec,setDec]=useState(65);
@@ -16,6 +19,12 @@ function App() {
 
     <div>
     <UsersTables/>
+    <SansUseMemo/>
+    <AvecUseMemo/>
+    <h2>usecalbck</h2>
+    <WithoutCallbackExample/>
+    <h2>usecalbck</h2>
+    <WithCallbackExample/>
     </div>
     </>
   )
